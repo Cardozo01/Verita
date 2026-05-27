@@ -1,0 +1,13 @@
+# Bloqueios para o Frontend (Next.js)
+**/verita-frontend/node_modules/
+**/verita-frontend/.next/
+**/verita-frontend/out/
+
+# Bloqueios para o Backend (Java / Maven)
+**/verita/target/
+**/verita/.idea/
+**/verita/*.iml
+
+# Sistema Operacional
+.DS_Store
+Thumbs.db

@@ -22,7 +22,7 @@ const traduzirBackend = (texto: string) => {
     .replace("high", "alto");
 };
 
-export default function page() {
+export default function Home() {
   const [barcode, setBarcode] = useState('');
   const [product, setProduct] = useState<ProductData | null>(null);
   const [loading, setLoading] = useState(false);

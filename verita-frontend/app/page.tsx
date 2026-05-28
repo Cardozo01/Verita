@@ -40,11 +40,11 @@ export default function Home() {
     // Expressão regular simples para testar se o texto contém apenas números
     const isBarcode = /^\d+$/.test(barcode.trim());
     
-    let url = `http://localhost:8080/api/product/${barcode.trim()}`;
+    let url = `https://verita-jsor.onrender.com/api/product/${barcode.trim()}`;
     
     // Se NÃO for apenas números, muda a rota para a nossa nova busca por nome
     if (!isBarcode) {
-      url = `http://localhost:8080/api/product/search?name=${encodeURIComponent(barcode.trim())}`;
+      url = `https://verita-jsor.onrender.com/api/product/search?name=${encodeURIComponent(barcode.trim())}`;
     }
 
     const response = await fetch(url);
